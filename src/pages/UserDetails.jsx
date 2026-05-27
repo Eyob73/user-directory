@@ -114,7 +114,7 @@ export default function UserDetails() {
         Back to directory
       </Link>
 
-      {loading && <Loader message="Loading user details..." />}
+      {loading && <Loader message="Loading user details..." variant="details" />}
 
       {!loading && error && <ErrorMessage message={error} onRetry={loadUser} />}
 
