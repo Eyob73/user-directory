@@ -28,11 +28,10 @@ export default function Header({
             <button
               type="button"
               onClick={onToggleFavoritesFilter}
-              className={`rounded-lg px-3 py-2 text-sm font-medium transition ${
-                showFavoritesOnly
-                  ? "bg-rose-100 text-rose-700 dark:bg-rose-950 dark:text-rose-300"
-                  : "text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800"
-              }`}
+              className={`rounded-lg px-3 py-2 text-sm font-medium transition ${showFavoritesOnly
+                ? "bg-rose-100 text-rose-700 dark:bg-rose-950 dark:text-rose-300"
+                : "text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800"
+                }`}
             >
               ❤️ Favorites{favoriteCount > 0 && ` (${favoriteCount})`}
             </button>

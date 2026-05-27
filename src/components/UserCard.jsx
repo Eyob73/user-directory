@@ -60,11 +60,10 @@ export default function UserCard({ user, isFavorite, onToggleFavorite }) {
             aria-label={
               isFavorite ? "Remove from favorites" : "Add to favorites"
             }
-            className={`rounded-full p-2 transition hover:scale-110 ${
-              isFavorite
+            className={`rounded-full p-2 transition hover:scale-110 ${isFavorite
                 ? "text-rose-500"
                 : "text-slate-300 hover:text-rose-400 dark:text-slate-600"
-            }`}
+              }`}
           >
             <svg
               className="h-5 w-5"

@@ -38,8 +38,8 @@ export default function Home({ showFavoritesOnly }) {
     } catch (err) {
       setError(
         err.response?.data?.message ||
-          err.message ||
-          'Failed to fetch users. Please check your connection.',
+        err.message ||
+        'Failed to fetch users. Please check your connection.',
       )
     } finally {
       setLoading(false)
@@ -57,8 +57,8 @@ export default function Home({ showFavoritesOnly }) {
         if (!cancelled) {
           setError(
             err.response?.data?.message ||
-              err.message ||
-              'Failed to fetch users. Please check your connection.',
+            err.message ||
+            'Failed to fetch users. Please check your connection.',
           )
         }
       })
