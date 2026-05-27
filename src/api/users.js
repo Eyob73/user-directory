@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_BASE = 'https://jsonplaceholder.typicode.com'
+const API_BASE = 'https://jsonplaceholder.typicode.comr'
 
 export const fetchUsers = () => axios.get(`${API_BASE}/users`)
 
