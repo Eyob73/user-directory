@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_BASE = 'https://jsonplaceholder.typicode.com'
+const API_BASE = import.meta.env.VITE_API_BASE_URL
 
 export const fetchUsers = () => axios.get(`${API_BASE}/users`)
 
