@@ -1,0 +1,9 @@
+<svg
+  className="h-5 w-5"
+  fill="currentColor"
+  viewBox="0 0 20 20"
+>
+  <path
+    d="M10 10a4 4 0 100-8 4 4 0 000 8zM2 18a8 8 0 1116 0H2z"
+  />
+</svg>
