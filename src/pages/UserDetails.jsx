@@ -114,7 +114,9 @@ export default function UserDetails() {
         Back to directory
       </Link>
 
-      {loading && <Loader message="Loading user details..." variant="details" />}
+      {loading && (
+        <Loader message="Loading user details..." variant="details" />
+      )}
 
       {!loading && error && <ErrorMessage message={error} onRetry={loadUser} />}
 
@@ -124,7 +126,10 @@ export default function UserDetails() {
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <div className="flex items-center gap-4">
                 <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/20 text-2xl font-bold text-white backdrop-blur">
-                  {user.name.charAt(0)}
+                  {user.name
+                    .split(" ")
+                    .map((name) => name.charAt(0))
+                    .join("")}
                 </div>
                 <div>
                   <h1 className="text-2xl font-bold text-white sm:text-3xl">

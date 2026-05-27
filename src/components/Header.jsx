@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useTheme } from "../hooks/useTheme";
+import userIMG from "../assets/user.png";
 
 export default function Header({
   favoriteCount = 0,
@@ -15,7 +16,7 @@ export default function Header({
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-2">
           <span className="flex h-12 w-12 items-center justify-center rounded-full bg-indigo-600 text-white">
-            <img src="/src/assets/user.png" alt="User" className="h- w-10" />
+            <img src={userIMG} alt="User" className="h- w-10" />
           </span>
           <span className="text-lg font-bold text-slate-900 dark:text-white">
             User Directory
